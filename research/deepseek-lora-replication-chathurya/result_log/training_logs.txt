@@ -1,0 +1,67 @@
+==================================================
+Testing model
+==================================================
+
+Test 1: Analyze the potential impact of a Category 5 hurricane hitting Miami, Florida.
+--------------------------------------------------------------------------------------------------------------
+<｜begin▁of▁sentence｜>You are a helpful assistant trained to provide detailed, structured disaster analysis reports. Output exactly these 7 sections without duplication or extra content, using structured text with angle-bracket headers (<disaster_analysis>, <event_summary>, etc.). Sections: <disaster_analysis> (13 subsections), <event_summary>, <detailed_analysis>, <predictions>, <impacts>, <mitigation_strategies>, <recommendations>. Do not output JSON.
+
+Instruction: Analyze the potential impact of a Category 5 hurricane hitting Miami, Florida.
+
+Response:
+<disaster_analysis>, 13 subsections.
+
+1. **Potential Category 5 hurricane impact on Miami**
+   - **1.1. Historical hurricane frequency and intensity in Miami**
+     - Analysis of past hurricane events, including their frequency and intensity, to assess the likelihood of a Category 5 hurricane.
+   - **1.2. Climate change and its effects on Miami**
+     - Evaluation of how climate change has influenced Miami's climate, including potential shifts in hurricane intensity and frequency.
+   - **1.3. Oceanographic factors affecting hurricane formation**
+     - Examination of oceanographic conditions, such as sea surface temperature and wind patterns, that influence hurricane formation.
+   - **1.4. Weather systems and their potential intensity**
+     - Analysis of current weather systems in Miami, including potential for a Category 5 hurricane, and their impact on the city.
+   - **1.5. Oceanic and atmospheric interactions**
+     - Evaluation of interactions between the ocean and atmosphere that could lead to a Category 5 hurricane.
+   - **1.6. Local infrastructure and response**
+     - Assessment of local infrastructure in Miami, such as roads, utilities, and buildings, and their response to a potential Category 5 hurricane.
+   - **1.7. Public safety and emergency preparedness**
+     - Analysis of public safety concerns and preparedness measures in place for a potential Category 5 hurricane in Miami.
+   - **1.8. Economic and …[truncated]
+
+Found 7/7 tags → ['<disaster_analysis>', '<event_summary>', '<detailed_analysis>', '<predictions>', '<impacts>', '<mitigation_strategies>', '<recommendations>']
+
+Test 2: Evaluate the risks and provide analysis for a major earthquake in Los Angeles.
+--------------------------------------------------------------------------------------------------------------
+<｜begin▁of▁sentence｜>You are a helpful assistant trained to provide detailed, structured disaster analysis reports. Output exactly these 7 sections without duplication or extra content, using structured text with angle-bracket headers (<disaster_analysis>, <event_summary>, etc.). Sections: <disaster_analysis> (13 subsections), <event_summary>, <detailed_analysis>, <predictions>, <impacts>, <mitigation_strategies>, <recommendations>. Do not output JSON.
+
+Instruction: Evaluate the risks and provide analysis for a major earthquake in Los Angeles.
+
+Response:
+<disaster_analysis>, 1. Major earthquake in Los Angeles: The primary risk is the earthquake itself, which has a significant impact on infrastructure, human life, and property. The magnitude of the earthquake is estimated to be around 7.0, which is extremely dangerous. The risk of loss of life is high, with the potential for immediate fatalities. The risk of damage to buildings and infrastructure is also significant, with the possibility of significant damage to homes, bridges, and other structures. The risk of loss of property is high, with the potential for significant damage to personal and business assets. The risk of loss of life is high, with the potential for immediate fatalities. The risk of loss of property is high, with the potential for significant damage to personal and business assets. The risk of loss of life is high, with the potential for immediate fatalities. The risk of loss of property is high, with the potential for significant damage to personal and business assets. The risk of loss of life is high, with the potential for immediate fatalities. The risk of loss of property is high, with the potential for significant damage to personal and business assets. The risk of loss of life is high, with the potential for immediate fatalities. The risk of loss of property is high, with the potential for significant damage to personal and business assets. The risk of loss of life is high, with the potential f …[truncated]
+
+Found 7/7 tags → ['<disaster_analysis>', '<event_summary>', '<detailed_analysis>', '<predictions>', '<impacts>', '<mitigation_strategies>', '<recommendations>']
+
+Test 3: Assess the disaster preparedness for flooding in a coastal city.
+--------------------------------------------------------------------------------------------------------------
+<｜begin▁of▁sentence｜>You are a helpful assistant trained to provide detailed, structured disaster analysis reports. Output exactly these 7 sections without duplication or extra content, using structured text with angle-bracket headers (<disaster_analysis>, <event_summary>, etc.). Sections: <disaster_analysis> (13 subsections), <event_summary>, <detailed_analysis>, <predictions>, <impacts>, <mitigation_strategies>, <recommendations>. Do not output JSON.
+
+Instruction: Assess the disaster preparedness for flooding in a coastal city.
+
+Response:
+<disaster_analysis> (13 subsections)
+
+1. **Preparedness and Response**
+   - **Floodplain Mapping**: Detailed maps of floodplain areas to identify high-risk zones.
+   - **Emergency Response Plan**: Comprehensive plan including evacuation routes, flood suppression measures, and communication protocols.
+   - **Flood Risk Assessment**: Analysis of flood risk factors, including sea-level rise and coastal erosion.
+   - **Emergency Response Training**: Training programs for emergency responders to ensure effective response.
+   - **Flood Management Plan**: Detailed flood management strategies, including drainage systems and emergency response plans.
+   - **Floodplain Decontamination**: Procedures for decontamination of floodplain areas to prevent further flooding.
+   - **Floodplain Decontamination Response**: Response plan for decontamination efforts, including communication and coordination.
+   - **Floodplain Decontamination Funding**: Funding sources for decontamination efforts, including grants and local funds.
+   - **Floodplain Decontamination Budget**: Budget allocation for decontamination efforts, including personnel, materials, and equipment.
+   - **Floodplain Decontamination Completion**: Completion timeline for decontamination efforts, including milestones and timelines.
+   - **Floodplain Decontamination Completion Funding**: Funding sources for decontamination completion, including grants and local funds.
+   - **Floodplain Deco …[truncated]
+
+Found 7/7 tags → ['<disaster_analysis>', '<event_summary>', '<detailed_analysis>', '<predictions>', '<impacts>', '<mitigation_strategies>', '<recommendations>']
