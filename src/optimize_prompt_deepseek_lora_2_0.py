@@ -107,7 +107,7 @@ lora_cfg = LoraConfig(
 model = get_peft_model(model, lora_cfg)
 model.print_trainable_parameters()
 
-# system_prompt = """🟢 ROLE & OBJECTIVE
+# system_prompt = """ ROLE & OBJECTIVE
 # You are a domain expert in wildfire modeling and emergency disaster response. Your role is to generate precise, structured, decision-grade reports for wildfire scenarios using scientific data, historical references, and domain-specific knowledge. Your audience includes government response teams, disaster analysts, and operational command centers. The goal is to predict wildfire behavior, assess current impact, and recommend actionable strategies — all backed by technical clarity and quantified uncertainty.
 
 # ────────────────────────────────────────────
@@ -235,10 +235,10 @@ REQUIREMENTS:
 • Use professional emergency management terminology
 • Each section must contain detailed content with multiple data points"""
 
-print(f"✓ CORRECTED system prompt loaded ({len(system_prompt)} characters)")
+print(f"✓ system prompt loaded ({len(system_prompt)} characters)")
 
 def format_batch(examples):
-    """CORRECTED: Proper label masking for fine-tuning"""
+
     texts = []
 
     for instruction, output in zip(examples["instruction"], examples["output"]):
@@ -329,7 +329,7 @@ print("Saved to", out_dir)
 # ]
 
 # def gen(instr, max_new=1500):
-#     """CORRECTED: Generate without forcing wrong tags"""
+# 
 #     prompt = f"{system_prompt}\n\nInstruction: {instr}\n\nResponse:\n"
 #     inp = tokenizer(prompt, return_tensors="pt").to(device)
 #     with torch.no_grad():
@@ -347,7 +347,7 @@ print("Saved to", out_dir)
 #     response = full_text.split("Response:\n")[-1]
 #     return response
 
-# # CORRECTED: Test with disaster scenarios matching your training data
+#
 # tests = [
 #     """event_title: Hurricane Milton Test
 # event_description: A powerful Category 4 hurricane approaching the Florida coast with sustained winds of 140 mph, threatening major population centers.
@@ -378,20 +378,14 @@ print("Saved to", out_dir)
 #         print(f"\n✓ Found {len(found)}/{len(required_tags)} tags → {found}")
 
 #         if len(found) >= 7:
-#             print("🎉 SUCCESS: All sections generated!")
+#             print(" SUCCESS: All sections generated!")
 #         else:
-#             print("⚠️ Missing sections - may need more training or prompt adjustment")
+#             print(" Missing sections - may need more training or prompt adjustment")
 
 #     except Exception as e:
-#         print(f"❌ Error in test {n}: {e}")
+#         print(f" Error in test {n}: {e}")
 
 # print("\n" + "="*70)
-# print("🎯 CORRECTED VERSION SUMMARY:")
-# print("   ✅ Fixed system prompt for all disaster types")
-# print("   ✅ Corrected XML tag structure")
-# print("   ✅ Fixed label masking for proper learning")
-# print("   ✅ Updated test cases to match training data format")
-# print("   ✅ Should now generate all 7 required sections")
 # print("="*70)
 
 print("\n" + "="*50)
@@ -545,10 +539,9 @@ for n, test_case in enumerate(test_cases, 1):
             print("SUCCESS: All sections generated!")
         elif len(found) >= 5:
             print("GOOD: Most sections working")
-        else:
-            print("PARTIAL: Some improvement needed")
+    
 
     except Exception as e:
         print(f"Error: {e}")
 
-print("\n QUICK FIX RESULTS: Should show 7/7 tags with structured content!")
+print("\n RESULTS: Should show 7/7 tags with structured content!")
