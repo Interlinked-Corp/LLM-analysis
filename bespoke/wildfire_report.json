@@ -1,0 +1,244 @@
+{
+  "precedent": {
+    "incident_name": "Sage Canyon Fire",
+    "ignition_coordinates": "39.4215, -114.8973",
+    "current_radius_miles": 3.7,
+    "maximum_predicted_radius_miles": 8.5,
+    "quadrants": {
+      "NE": "moderate spread, juniper/sagebrush transition",
+      "SE": "rapid spread, dense sagebrush",
+      "SW": "minimal spread, rocky terrain",
+      "NW": "active spread, pinyon-juniper woodland"
+    },
+    "time_since_ignition": "19 hours 45 minutes",
+    "growth_rate_acres_per_hour": 245,
+    "burning_index": "78 - Extreme",
+    "containment_status": "5% contained, northern flank"
+  },
+  "weather_report": {
+    "temperature_f": 92,
+    "low_temp": 57,
+    "high_temp_time": "15:30",
+    "low_temp_time": "05:15",
+    "high_surface_temp_direct": 105,
+    "high_surface_temp_direct_time": "14:45",
+    "low_surface_temp_direct": 53,
+    "low_surface_temp_direct_time": "05:30",
+    "high_surface_temp_shade": 89,
+    "high_surface_temp_shade_time": "15:00",
+    "low_surface_temp_shade": 50,
+    "low_surface_temp_shade_time": "05:45",
+    "humidity_percent": 14,
+    "humidity_high": 42,
+    "humidity_high_time": "06:00",
+    "humidity_low_time": "16:00",
+    "wind_direction_day": "235",
+    "wind_speed_kts_day": 15,
+    "wind_direction_night": "280",
+    "wind_speed_kts_night": 8,
+    "forecast": "Hot and dry conditions expected to persist for next 72 hours with strengthening afternoon winds. No precipitation expected.",
+    "wetting_rain_chance": "0% for next 7 days",
+    "precipitation_amt": 0,
+    "cloud_cover_value": "Clear skies, 5% coverage"
+  },
+  "topography_report": {
+    "terrain_type": "Basin and range topography with steep canyons and open valleys",
+    "fuel_type": "Sagebrush, pinyon-juniper woodland, scattered grass understory",
+    "low_fuel_density": 2,
+    "low_fuel_coords": "39.3945, -114.9210",
+    "high_fuel_density": 7,
+    "high_fuel_coords": "39.4503, -114.8762",
+    "avg_fuel_density": 5,
+    "elevation": {
+      "lowest_elevation": 5820,
+      "lowest_elevation_coords": "39.3780, -114.9350",
+      "highest_elevation": 7840,
+      "highest_elevation_coords": "39.4680, -114.8520"
+    }
+  },
+  "fire_spread_predictions": {
+    "mpr_zones": [
+      "Eastern slope",
+      "Southern valley",
+      "Northeastern ridge"
+    ],
+    "mpr_slopes": [
+      "35% grade eastern face",
+      "12% grade southern valley",
+      "28% grade northeastern ridge"
+    ],
+    "mpr_aspect_grads": [
+      125,
+      175,
+      45
+    ],
+    "spread_speeds": [
+      150,
+      85,
+      210
+    ],
+    "spread_speed_directions": [
+      "105",
+      "185",
+      "070"
+    ],
+    "spread_vectors": [
+      "Eastern ridge line",
+      "Southern valley",
+      "Northeastern drainage"
+    ],
+    "spread_vector_coords": [
+      "39.4367, -114.8650",
+      "39.3975, -114.8875",
+      "39.4582, -114.8791"
+    ],
+    "spread_vector_causes": [
+      "Upslope wind alignment",
+      "Dense fuel bed",
+      "Steep canyon chimney effect"
+    ],
+    "spread_consensus": "Primary spread direction east/southeast, driven by prevailing winds and topography",
+    "spread_hotspots": [
+      "Northeastern ridge",
+      "Eastern canyon",
+      "Southern fuel complex"
+    ],
+    "spread_hotspot_elevations": [
+      7240,
+      6350,
+      6120
+    ],
+    "spread_hotspot_intensities": [
+      8,
+      7,
+      6
+    ],
+    "spread_potential": 9,
+    "spread_distance": 2.3,
+    "spread_angle": 115
+  },
+  "land_of_interest": {
+    "access_routes": [
+      "County Road 412",
+      "Forest Service Road 227",
+      "Hunter Creek Trail"
+    ],
+    "access_coords": [
+      "39.3850, -114.9425",
+      "39.4755, -114.8335",
+      "39.4320, -114.8150"
+    ],
+    "natural_barriers": [
+      "White Creek",
+      "Limestone Ridge",
+      "Spring Valley Road"
+    ],
+    "barrier_coords": [
+      "39.3720, -114.9120",
+      "39.4890, -114.8650",
+      "39.3950, -114.7980"
+    ],
+    "high_risk_area_types": [
+      "Rural residences",
+      "Communication tower",
+      "Historic ranch"
+    ],
+    "high_risk_area_type_coords": [
+      "39.3625, -114.8225",
+      "39.4912, -114.8437",
+      "39.3870, -114.7950"
+    ],
+    "ownership_coords": [
+      "39.4250, -114.9000",
+      "39.3950, -114.8500",
+      "39.4750, -114.8300"
+    ],
+    "ownership_types": [
+      "BLM public land",
+      "Private ranch land",
+      "USFS managed land"
+    ],
+    "ownership_radii": [
+      4.5,
+      1.8,
+      2.7
+    ],
+    "wui_zones": {
+      "wui_community_names": [
+        "Pine Creek",
+        "Sage Valley Estates",
+        "Hunter's Ranch"
+      ],
+      "wui_population_estimates": [
+        125,
+        85,
+        30
+      ],
+      "wui_impact_times": [
+        36,
+        12,
+        48
+      ]
+    },
+    "critical_infrastructure": {
+      "critical_infrastructures": [
+        "Eastern Nevada Power Line",
+        "Spring Valley Water Supply",
+        "Microwave Relay Tower"
+      ],
+      "critical_infrastructure_coords": [
+        "39.3780, -114.7890",
+        "39.3550, -114.8150",
+        "39.4912, -114.8437"
+      ]
+    },
+    "protected_areas": {
+      "protected_areas": [
+        "Sage Grouse Habitat",
+        "White River Watershed",
+        "Historical Mining District"
+      ],
+      "protected_area_radii": [
+        3.2,
+        2.5,
+        1.7
+      ],
+      "protected_area_coords": [
+        "39.4550, -114.8150",
+        "39.3680, -114.7950",
+        "39.4120, -114.9350"
+      ]
+    }
+  },
+  "resources": {
+    "watershed_resources": [
+      "White Creek Reservoir",
+      "Sage Canyon Spring",
+      "Hunter Creek"
+    ],
+    "watershed_resource_coords": [
+      "39.3550, -114.8780",
+      "39.4680, -114.8120",
+      "39.4320, -114.8150"
+    ],
+    "available_resources": [
+      "Type 1 Hotshot Crew",
+      "Type 3 Incident Management Team",
+      "Heavy Air Tanker Group"
+    ],
+    "available_resources_details": [
+      "2 crews (40 personnel) - Silver State Hotshots and Ruby Mountain Hotshots",
+      "Eastern Nevada IMT deployed and operational",
+      "2 LATs and 1 VLAT available from Elko Air Base"
+    ]
+  },
+  "output": {
+    "event_summary": "The Sage Canyon Fire ignited approximately 20 hours ago in eastern Nevada (39.4215, -114.8973) and has rapidly expanded to a 3.7-mile radius, burning primarily in sagebrush and pinyon-juniper woodland. Currently at 5% containment on the northern flank, the fire is spreading at 245 acres per hour with extreme fire behavior (Burning Index: 78) under hot, dry conditions with winds 15 kts from the southwest. The fire threatens the communities of Pine Creek, Sage Valley Estates, and Hunter's Ranch, along with critical infrastructure including power lines and water supplies.",
+    "detailed_analysis": "The Sage Canyon Fire is exhibiting characteristics similar to the 2018 Martin Fire, with rapid spread through continuous sagebrush fuels. Current conditions (92°F, 14% RH, winds 15 kts) are conducive to extreme fire behavior. The fire is most active in the southeastern quadrant where dense sagebrush provides abundant fuel and in the northeastern quadrant where topography creates chimney effects. Basin and range topography with elevation differences of 2,020 feet (5,820-7,840 ft) is significantly influencing fire behavior, creating upslope runs and complex wind patterns. Fuel density varies from light (2 kg/acre) in rocky southwestern areas to heavy (7 kg/acre) in the northeastern sector, with an average density of 5 kg/acre across the fire area. The fire is spreading primarily eastward, pushed by prevailing southwest winds aligning with topographic features, particularly along the northeastern drainage where spread rates reach 210 acres/hour.",
+    "predictions": "Based on current weather forecasts (continued hot, dry conditions with no precipitation expected for 7 days) and fire behavior, the Sage Canyon Fire is predicted to reach a maximum radius of 8.5 miles, primarily expanding east-southeast at a spread angle of 115°. Most rapid growth will occur along the northeastern drainage (39.4582, -114.8791) due to chimney effects and heavy fuel loading. Without containment, the fire will likely impact Sage Valley Estates within 12 hours and approach the Eastern Nevada Power Line within 24-36 hours. The steep northeastern ridge at 7,240 ft elevation represents the highest intensity hotspot (8/10) and will be difficult to contain given limited access. Given similarities to the 2018 Martin Fire, which exhibited similar spread rates in comparable fuel types, we project potential for 45,000+ acres within 72 hours if containment efforts are unsuccessful. Confidence in spread direction: 85%. Confidence in rate of spread: 75% due to uncertain wind shifts.",
+    "impacts": "The Sage Canyon Fire threatens three WUI communities with a combined population of 240 residents. Sage Valley Estates (85 residents) faces imminent threat within 12 hours based on current spread rates. Critical infrastructure at risk includes the Eastern Nevada Power Line, which provides electricity to approximately 5,000 households in the region, the Spring Valley Water Supply serving local communities, and a Microwave Relay Tower essential for regional communications. Environmental impacts include potential destruction of 3.2 square miles of designated Sage Grouse Habitat, a species of conservation concern. The White River Watershed, which supplies agricultural water to the region, is also threatened. Air quality impacts are expected to be severe in downwind communities for 5-7 days based on projected fire activity and stable atmospheric conditions. Economic impacts include potential livestock losses on private ranch lands and disruption to the local tourism economy dependent on outdoor recreation.",
+    "recommendations": "1) Immediately deploy structure protection resources to Sage Valley Estates, the most immediately threatened community. 2) Establish containment lines utilizing existing natural barriers including White Creek and Limestone Ridge to protect critical infrastructure. 3) Prioritize protection of the Eastern Nevada Power Line by conducting burnout operations from Spring Valley Road. 4) Deploy aerial resources to target the northeastern ridge hotspot to reduce fire intensity in this critical spread vector. 5) Implement a HEPA filtration program for vulnerable populations in downwind communities to mitigate health impacts from smoke exposure. 6) Coordinate with BLM, USFS, and private landowners to establish unified command given the multi-jurisdictional nature of the incident. 7) Establish trigger points for additional resource orders based on containment effectiveness within the next 12 hours. 8) Develop night operations plan to take advantage of decreased fire activity during lower temperatures and higher humidity.",
+    "response_strategy": "Implement a full suppression strategy with emphasis on point protection of threatened communities and infrastructure. Divide the fire into three divisions: Division A (northern flank) will hold and improve existing containment; Division B (eastern/southeastern sectors) will focus on protecting Sage Valley Estates and the Eastern Nevada Power Line using direct and indirect attack methods as appropriate; Division Z (western flank) will establish containment lines utilizing County Road 412 and conducting burnout operations. Air operations will prioritize support of Division B during peak burning periods (1200-1800 hours) with helicopter water drops on hotspots and retardant drops to reinforce containment lines. Night operations will focus on line construction and burnouts in Division Z where terrain and fuels are most favorable. Resource needs include: 5 Type 1 hand crews, 3 Type 2 IA crews, 8 Type 6 engines, 3 Type 4 engines, 2 Type 1 helicopters, 1 Type 3 helicopter, 2 dozers, and 2 water tenders. Establish unified command with representatives from BLM, USFS, County Emergency Management, and Nevada Division of Forestry.",
+    "evacuation_strategy": "Implement a three-phase evacuation plan: 1) IMMEDIATE EVACUATION (RED): Sage Valley Estates - Establish evacuation center at White Pine High School (39.2550, -114.8750) with Red Cross support; utilize County Road 412 as primary evacuation route with law enforcement escorts. 2) EVACUATION WARNING (YELLOW): Pine Creek and Hunter's Ranch - Residents should prepare for potential evacuation within 24-36 hours; gather essential items, medications, and important documents; make arrangements for livestock and pets. 3) ADVISORY (BLUE): Communities within a 15-mile radius east of the fire should remain alert to changing conditions and monitor official information sources. Establish livestock shelter at White Pine County Fairgrounds. Implement emergency notification system via Wireless Emergency Alerts, reverse 911 calls, and door-to-door notifications by Sheriff's Department personnel. Special needs populations in Sage Valley Estates have been identified and will receive priority evacuation assistance. Establish traffic control points at County Road 412/Highway 50 junction and Forest Service Road 227/County Road 413 junction to prevent unauthorized entry into the evacuation zone."
+  }
+}
