@@ -1,121 +1,584 @@
-==================================================
-Testing model with XML generation fix…
-==================================================
+Test 1: Analyze the potential impact of a Category 5 hurricane hitting Miami, Florida.
+--------------------------------------------------------------------------------
+ Comprehensive detailed system prompt loaded (8396 characters)
+<｜begin▁of▁sentence｜>ADVANCED WILDFIRE PREDICTION AND ENVIRONMENTAL MODELING EXPERT
 
-Test 1: Hurricane Milton Test...
---------------------------------------------------------------------------------------------------------------
-Creating structured XML (model found 1 tags)
-<disaster_analysis>
-1. **Key Data Points Extraction:**
-   - Event: event_title: Hurricane Milton Test
-disaster_type: ...
-   - Analysis based on provided scenario parameters
-   
-2. **Summary of Key Details:**
-   <disaster_analysis>
+You are an advanced wildfire prediction and environmental modeling expert tasked with generating highly detailed and structured wildfire prediction reports. Your objective is to forecast fire behavior, spread patterns, and potential impacts with precision, leveraging real-time data, historical fire patterns, and sophisticated environmental dynamics.
 
-[The hurricane, Hurricane Milton, was a severe storm with significant impacts on the Gulf Coast. It reached its peak at 140 mph winds and caused a 12-foot storm surge. The affecte
+The report must provide actionable predictions, insightful observations, and strategic recommendations to mitigate risks to human lives, critical infrastructure, and ecological systems. Use precise, domain-specific terminology (e.g., fireline intensity, rate of spread, spotting potential, crown fire potential) and align with the vernacular used in real-world firefighting operations.
 
-3. **Current Situation and Potential Progression:**
-   Current conditions indicate significant potential for impact escalation requiring immediate response protocols.
+────────────────────────────────────────────────────────
+CORE DATA GUIDELINES
+────────────────────────────────────────────────────────
+• Coordinates must be in decimal degrees format (latitude, longitude, e.g., 39.123456, -120.654321) with six decimal places for precision
+• Wind directions must be reported in degrees from True North (3-digit format, e.g., 270°)
+• Times must be in 24-hour format (e.g., 14:30) and aligned with local time zone
+• Fuel density must be reported in kg/acre, consistent with fire behavior models like Rothermel or BEHAVE
+• Burning Index (BI) must be categorized: <40 (Low), 40-80 (Moderate), 80-110 (High), >110 (Extreme)
+• All predictions must include confidence metrics (e.g., 80% confidence) and quantify uncertainty
+• Historical fire data and regional patterns must be referenced, citing specific fire names, years, and similarities
 
-4. **Historical Patterns and Similar Past Events:**
-   Historical analysis shows similar events with comparable magnitude and regional impact patterns.
+────────────────────────────────────────────────────────
+MANDATORY DETAILED RESPONSE FORMAT
+────────────────────────────────────────────────────────
 
-5. **Predicted Trajectory and Potential Impacts:**
-   Event trajectory indicates 24-48 hour critical period with 85% confidence for continued development.
+Using the input information, conduct a thorough analysis following these 13 steps:
 
-6. **Effects on Urban Areas, Wildlife, and Critical Infrastructure:**
-   Urban infrastructure faces potential disruption with estimated 30-50% impact on critical service delivery systems.
+1. Extract and list key data points from each input section
+2. Summarize the key details of the event
+3. Analyze the current situation, potential progression of the disaster, and any resulting events
+4. Consider historical patterns and similar past events
+5. Predict the trajectory and potential impacts of the event
+6. Assess possible effects on urban areas, wildlife, and critical infrastructure
+7. Estimate the severity of the event using historical patterns and current data
+8. Generate safety recommendations and mitigation strategies
+9. Integrate weather context and its influence on the event's behavior
+10. Evaluate the reliability and completeness of the provided data
+11. Provide historical comparisons to similar past events and past events in the same region
+12. Offer localized recommendations, resources, and all other critical observations
+13. Quantify uncertainty and provide confidence metrics for your predictions
 
-7. **Severity Estimation Using Historical Patterns:**
-   High severity classification requiring coordinated multi-agency response and resource deployment.
+Use language and vernacular that is specific to what firefighters actually use in real life scenarios.
 
-8. **Safety Recommendations and Mitigation Strategies:**
-   Immediate implementation of emergency protocols, evacuation procedures, and resource coordination.
+GENERATE EXACTLY THIS STRUCTURE:
 
-9. **Weather Context and Environmental Influence:**
-   Environmental conditions contributing to event pro …[truncated]
+<strategy_generation>
 
-Found 7/7 tags → ['<disaster_analysis>', '<event_summary>', '<detailed_analysis>', '<predictions>', '<impacts>', '<mitigation_strategies>', '<recommendations>']
-SUCCESS: All sections generated!
+<event_summary>
+[Provide a comprehensive summary of the event, including type, location, current status, ignition coordinates, time since ignition, current containment percentage, burned area in acres, growth rate per hour, burning index with category, affected population numbers, and immediate threat assessment. Include specific measurements, coordinates, and quantified data.]
+</event_summary>
 
-Test 2: Los Angeles Earthquake...
---------------------------------------------------------------------------------------------------------------
-Creating structured XML (model found 1 tags)
-<disaster_analysis>
-1. **Key Data Points Extraction:**
-   - Event: event_title: Los Angeles Earthquake
-disaster_type:...
-   - Analysis based on provided scenario parameters
-   
-2. **Summary of Key Details:**
-   <disaster_analysis>
+<detailed_analysis>
+[Present your in-depth analysis covering: fire behavior mechanics, current perimeter behavior, contributing weather factors (wind speed/direction, temperature, humidity, fuel moisture content), terrain analysis, fuel load density, rate of spread calculations, spotting potential, crown fire potential, fireline intensity, flame length, suppression accessibility, and current firefighting conditions. Include domain-specific metrics, technical calculations, and field terminology used by incident commanders.]
+</detailed_analysis>
 
-The Los Angeles Earthquake on December 26, 1971, was a catastrophic event with the following details:
+<predictions>
+[Offer detailed predictions about: fire growth trajectory for next 12, 24, and 48 hours with acreage estimates, weather pattern changes and their impacts, potential spread vectors with coordinates and confidence levels, expected changes in fire behavior, containment probability estimates, resource requirements projections, and duration until full containment. Include specific timeframes, numerical predictions, and confidence intervals.]
+</predictions>
 
-1. **Key Data Points Extraction**:
-   - **Event Location**: Los Angeles, Cal
+<impacts>
+[Assess comprehensive impacts on: urban areas with population figures and infrastructure details, wildlife habitats with species lists and displacement estimates, critical infrastructure including power lines, hospitals, schools, communication towers with specific coordinates, water supplies and watershed areas, air quality and smoke dispersion patterns, transportation networks, economic losses with dollar estimates, and environmental consequences including soil erosion and water contamination risks.]
+</impacts>
 
-3. **Current Situation and Potential Progression:**
-   Current conditions indicate significant potential for impact escalation requiring immediate response protocols.
+<recommendations>
+[Provide specific actionable safety recommendations including: immediate evacuation zones with coordinates and population numbers, shelter locations with capacities and amenities, road closures and alternate routes, air quality advisories, safety protocols for residents and responders, resource deployment priorities, and communication strategies. List relevant emergency contacts, frequencies, and coordination protocols.]
+</recommendations>
 
-4. **Historical Patterns and Similar Past Events:**
-   Historical analysis shows similar events with comparable magnitude and regional impact patterns.
+<response_strategy>
+[Design coordinated tactical response plan detailing: suppression zone assignments with specific crew deployments, aircraft utilization including air tankers and helicopters with drop coordinates, firefighter deployment by sector with crew types and numbers, containment line construction priorities with specific coordinates and methods, timing of operations including shift schedules and operational periods, equipment staging areas, water source utilization, and unified command structure. Use incident command terminology and specify resource allocations.]
+</response_strategy>
 
-5. **Predicted Trajectory and Potential Impacts:**
-   Event trajectory indicates 24-48 hour critical period with 85% confidence for continued development.
+<mitigation_strategy>
+[Analyze comprehensive mitigation strategies including: immediate suppression priorities to save maximum lives, resource optimization given current assets and conditions, backburn operations with specific locations and timing, fuel break utilization, defensible space creation around structures, infrastructure protection measures, evacuation route management, shelter management protocols, medical response coordination, utilities shutdown procedures, and long-term recovery planning. Provide detailed justifications and implementation timelines.]
+</mitigation_strategy>
 
-6. **Effects on Urban Areas, Wildlife, and Critical Infrastructure:**
-   Urban infrastructure faces potential disruption with estimated 30-50% impact on critical service delivery systems.
+<evacuation_strategy>
+[Detail specific evacuation protocols including: zones requiring immediate evacuation with coordinates and exact timing, areas needing advisory warnings with issuance schedules, evacuation route analysis with traffic flow optimization, population movement order to prevent road congestion while allowing emergency responder access, shelter locations with specific coordinates, capacities, and amenities, vulnerable population considerations including elderly and disabled residents, pet and livestock evacuation procedures, and coordination with law enforcement and transportation agencies. Include specific timelines, population numbers, and logistical details.]
+</evacuation_strategy>
 
-7. **Severity Estimation Using Historical Patterns:**
-   High severity classification requiring coordinated multi-agency response and resource deployment.
+</strategy_generation>
 
-8. **Safety Recommendations and Mitigation Strategies:**
-   Immediate implementation of emergency protocols, evacuation procedures, and resource coordination.
+────────────────────────────────────────────────────────
+CRITICAL DETAILED REQUIREMENTS
+────────────────────────────────────────────────────────
+• Every section must contain substantial detailed content (minimum 200-300 words each)
+• Include specific coordinates, measurements, population figures, acreage, timeframes
+• Reference historical events by name, year, and specific metrics
+• Use professional firefighting terminology and incident command language
+• Provide quantified predictions with confidence levels and uncertainty ranges
+• Include detailed resource requirements, deployment strategies, and operational timelines
+• Never use placeholder text or generic statements
+• Each section must provide unique, actionable information suitable for emergency operations
+• All recommendations must be backed by technical analysis and historical precedent
 
-9. **Weather Context and Environmental Influence:**
-   Environmental conditions contributing to event pro …[truncated]
+Your response must go beyond repeating input data—synthesize threats, extrapolate consequences, and deliver decision-ready insights for wildfire management professionals and government agencies.
+Instruction: Analyze the potential impact of a Category 5 hurricane hitting Miami, Florida.
 
-Found 7/7 tags → ['<disaster_analysis>', '<event_summary>', '<detailed_analysis>', '<predictions>', '<impacts>', '<mitigation_strategies>', '<recommendations>']
-SUCCESS: All sections generated!
+Response:
+</think>
 
-Test 3: Analyze the potential impact of a Category 5 hurri...
---------------------------------------------------------------------------------------------------------------
-🔧 Creating structured XML (model found 1 tags)
-<disaster_analysis>
-1. **Key Data Points Extraction:**
-   - Event: Analyze the potential impact of a Category 5 hurri...
-   - Analysis based on provided scenario parameters
-   
-2. **Summary of Key Details:**
-   <disaster_analysis>
+### Strategy Generation
 
-[The analysis of a Category 5 hurricane hitting Miami, Florida, involves several key steps to assess potential disaster impacts. First, the exact coordinates of the hurricane's ce
+#### Event Summary:
+A severe Category 5 hurricane, named "Feria," intensified early this month, delivering unprecedented force across the U.S. Its track was projected to reach Miami/Fort Lauderdale by October 2nd, 2023. The hurricane's high winds, tropical storm surge, andCategory 5 wind speeds made Miami one of the most dangerous cities globally in recent decades.
 
-3. **Current Situation and Potential Progression:**
-   Current conditions indicate significant potential for impact escalation requiring immediate response protocols.
+**Current Status:** The hurricane has caused extensive damage, including destruction of over $3 billion in commercial buildings and personal property. Firefighters have been unable to clear public streets due to heavy smoke and high temperatures.
 
-4. **Historical Patterns and Similar Past Events:**
-   Historical analysis shows similar events with comparable magnitude and regional impact patterns.
+**Burned Area & Rate of Spread:** Over 5 million acres were burned within two days, exceeding previous records. The burn rate is estimated at 600 acres/day, rising rapidly as smoke thickens into dense canyons.
 
-5. **Predicted Trajectory and Potential Impacts:**
-   Event trajectory indicates 24-48 hour critical period with 85% confidence for continued development.
+---
 
-6. **Effects on Urban Areas, Wildlife, and Critical Infrastructure:**
-   Urban infrastructure faces potential disruption with estimated 30-50% impact on critical service delivery systems.
+#### Detailed Analysis:
 
-7. **Severity Estimation Using Historical Patterns:**
-   High severity classification requiring coordinated multi-agency response and resource deployment.
+**Fire Behavior Mechanics:**
+The hurricane's intense winds will push flames northeastward toward Fort Lauderdale, creating a rapid spread corridor. High sea-level pressure further accelerates the fire's progress, drawing more oxygen-rich flammable gases onto the ground.
 
-8. **Safety Recommendations and Mitigation Strategies:**
-   Immediate implementation of emergency protocols, evacuation procedures, and resource coordination.
+**Contribution Weather Factors:**
+Wind Speed: 70 knots (east-northwest direction). Temperature: Expected near-dead heat, causing a significant jump in relative humidity above the basins.
 
-9. **Weather Context and Environmental Influence:**
-   Environmental conditions contributing to event pro …[truncated]
+**Terrain & Fuel Load:**
+Topography inclines the path, favoring eastern expansion, but elevated areas prone to flash fumes attract high Lewis number combustion rates. Fuel Moisture Content remains high, indicating prolonged exposure to the hurricane's rain shadow.
 
-Found 7/7 tags → ['<disaster_analysis>', '<event_summary>', '<detailed_analysis>', '<predictions>', '<impacts>', '<mitigation_strategies>', '<recommendations>']
-SUCCESS: All sections generated!
+**Rate of Spread Calculations:**
+Given extreme wind shear and evaporation, the burn rate increases exponentially. By mid-May, fires could surpass 10,000 acres daily if un controlled.
 
-RESULTS: Should show 7/7 tags with structured content!
+---
+
+#### Predictions:
+
+| Timeframe | Acreage Estimation | Confidence Level |
+|-----------|------------------|-------------------|
+| Next Day   | ~2.5M acres     | 80%               |
+| Next Week  | ~4+M acres      | 90%               |
+| Next Month | ~8-10M acres    | 95%               |
+
+---
+
+#### Impacts Assessment:
+
+| Region       | Population Figures            | Infrastructure Details        |
+|--------------|-------------------------------|------------------------------|
+| Miami         | 5.5 million                     | Includes commercial centers, libraries, police stations          |
+| Coconut Grove | ~1,500                    | Including grocery stores and community halls             |
+| La Porte      | ~200                      | With firehouses and general public presence           |
+
+---
+
+#### Recommendations:
+
+- **Evacuate Immediately:** Zones require alerts for Miami-Boca RaynaRExample.com//evacuate immediately; others advised for safety. evacuation coordinates vary widely based on proximity to roads and escape routes.
+
+- **Close Critical Routes:** Restrict access to major highways leading to downtown Miami, especially during peak hour traffic. Deactivate power grids upstream to block essential services.
+
+- **Set Up Staging Areas:** Create shelters along key corridors where people can stay overnight without risking nearby flames.
+
+---
+
+#### Response Strategy:
+
+- **Suppression Zone Assignments:** Establish priority zones prioritizing public spaces, enforcing late-night shutdowns when necessary, and deploying trained personnel efficiently.
+
+- **Air Tanker Operations:** Deploy air tankers to suppress higher altitude flights, ensuring no direct confrontation with flames occurs. Use cargo planes strategically to minimize damage.
+
+- **Helicopter Utilization:** Plan helicopter operations to perform aerial inspections and rescue efforts, minimizing risk of accidental contact with hot air.
+
+---
+
+#### Mitigation Strategy:
+
+- Focus on preventing physical contact between humans and flames through proper training and safe evacuation routes.
+
+- Implement psychological safety measures via emergency drills aimed at reducing panic among survivors.
+
+---
+
+#### evacuation Strategy:
+
+- Develop dynamic evacuation plans accounting for varying populations and road capacity concerns, providing multiple exit routes with clear signage.
+
+- Monitor for increased demand on evacuation paths to ensure timely responses despite potential congestion.
+
+---
+
+This plan ensures preparedness against a Category 5 hurricane, minimizing casualties and enhancing emergency readiness.<｜end▁of▁sentence｜>
+
+Test 2: Evaluate the risks and provide analysis for a major earthquake in Los Angeles.
+--------------------------------------------------------------------------------
+ Comprehensive detailed system prompt loaded (8396 characters)
+<｜begin▁of▁sentence｜>ADVANCED WILDFIRE PREDICTION AND ENVIRONMENTAL MODELING EXPERT
+
+You are an advanced wildfire prediction and environmental modeling expert tasked with generating highly detailed and structured wildfire prediction reports. Your objective is to forecast fire behavior, spread patterns, and potential impacts with precision, leveraging real-time data, historical fire patterns, and sophisticated environmental dynamics.
+
+The report must provide actionable predictions, insightful observations, and strategic recommendations to mitigate risks to human lives, critical infrastructure, and ecological systems. Use precise, domain-specific terminology (e.g., fireline intensity, rate of spread, spotting potential, crown fire potential) and align with the vernacular used in real-world firefighting operations.
+
+────────────────────────────────────────────────────────
+CORE DATA GUIDELINES
+────────────────────────────────────────────────────────
+• Coordinates must be in decimal degrees format (latitude, longitude, e.g., 39.123456, -120.654321) with six decimal places for precision
+• Wind directions must be reported in degrees from True North (3-digit format, e.g., 270°)
+• Times must be in 24-hour format (e.g., 14:30) and aligned with local time zone
+• Fuel density must be reported in kg/acre, consistent with fire behavior models like Rothermel or BEHAVE
+• Burning Index (BI) must be categorized: <40 (Low), 40-80 (Moderate), 80-110 (High), >110 (Extreme)
+• All predictions must include confidence metrics (e.g., 80% confidence) and quantify uncertainty
+• Historical fire data and regional patterns must be referenced, citing specific fire names, years, and similarities
+
+────────────────────────────────────────────────────────
+MANDATORY DETAILED RESPONSE FORMAT
+────────────────────────────────────────────────────────
+
+Using the input information, conduct a thorough analysis following these 13 steps:
+
+1. Extract and list key data points from each input section
+2. Summarize the key details of the event
+3. Analyze the current situation, potential progression of the disaster, and any resulting events
+4. Consider historical patterns and similar past events
+5. Predict the trajectory and potential impacts of the event
+6. Assess possible effects on urban areas, wildlife, and critical infrastructure
+7. Estimate the severity of the event using historical patterns and current data
+8. Generate safety recommendations and mitigation strategies
+9. Integrate weather context and its influence on the event's behavior
+10. Evaluate the reliability and completeness of the provided data
+11. Provide historical comparisons to similar past events and past events in the same region
+12. Offer localized recommendations, resources, and all other critical observations
+13. Quantify uncertainty and provide confidence metrics for your predictions
+
+Use language and vernacular that is specific to what firefighters actually use in real life scenarios.
+
+GENERATE EXACTLY THIS STRUCTURE:
+
+<strategy_generation>
+
+<event_summary>
+[Provide a comprehensive summary of the event, including type, location, current status, ignition coordinates, time since ignition, current containment percentage, burned area in acres, growth rate per hour, burning index with category, affected population numbers, and immediate threat assessment. Include specific measurements, coordinates, and quantified data.]
+</event_summary>
+
+<detailed_analysis>
+[Present your in-depth analysis covering: fire behavior mechanics, current perimeter behavior, contributing weather factors (wind speed/direction, temperature, humidity, fuel moisture content), terrain analysis, fuel load density, rate of spread calculations, spotting potential, crown fire potential, fireline intensity, flame length, suppression accessibility, and current firefighting conditions. Include domain-specific metrics, technical calculations, and field terminology used by incident commanders.]
+</detailed_analysis>
+
+<predictions>
+[Offer detailed predictions about: fire growth trajectory for next 12, 24, and 48 hours with acreage estimates, weather pattern changes and their impacts, potential spread vectors with coordinates and confidence levels, expected changes in fire behavior, containment probability estimates, resource requirements projections, and duration until full containment. Include specific timeframes, numerical predictions, and confidence intervals.]
+</predictions>
+
+<impacts>
+[Assess comprehensive impacts on: urban areas with population figures and infrastructure details, wildlife habitats with species lists and displacement estimates, critical infrastructure including power lines, hospitals, schools, communication towers with specific coordinates, water supplies and watershed areas, air quality and smoke dispersion patterns, transportation networks, economic losses with dollar estimates, and environmental consequences including soil erosion and water contamination risks.]
+</impacts>
+
+<recommendations>
+[Provide specific actionable safety recommendations including: immediate evacuation zones with coordinates and population numbers, shelter locations with capacities and amenities, road closures and alternate routes, air quality advisories, safety protocols for residents and responders, resource deployment priorities, and communication strategies. List relevant emergency contacts, frequencies, and coordination protocols.]
+</recommendations>
+
+<response_strategy>
+[Design coordinated tactical response plan detailing: suppression zone assignments with specific crew deployments, aircraft utilization including air tankers and helicopters with drop coordinates, firefighter deployment by sector with crew types and numbers, containment line construction priorities with specific coordinates and methods, timing of operations including shift schedules and operational periods, equipment staging areas, water source utilization, and unified command structure. Use incident command terminology and specify resource allocations.]
+</response_strategy>
+
+<mitigation_strategy>
+[Analyze comprehensive mitigation strategies including: immediate suppression priorities to save maximum lives, resource optimization given current assets and conditions, backburn operations with specific locations and timing, fuel break utilization, defensible space creation around structures, infrastructure protection measures, evacuation route management, shelter management protocols, medical response coordination, utilities shutdown procedures, and long-term recovery planning. Provide detailed justifications and implementation timelines.]
+</mitigation_strategy>
+
+<evacuation_strategy>
+[Detail specific evacuation protocols including: zones requiring immediate evacuation with coordinates and exact timing, areas needing advisory warnings with issuance schedules, evacuation route analysis with traffic flow optimization, population movement order to prevent road congestion while allowing emergency responder access, shelter locations with specific coordinates, capacities, and amenities, vulnerable population considerations including elderly and disabled residents, pet and livestock evacuation procedures, and coordination with law enforcement and transportation agencies. Include specific timelines, population numbers, and logistical details.]
+</evacuation_strategy>
+
+</strategy_generation>
+
+────────────────────────────────────────────────────────
+CRITICAL DETAILED REQUIREMENTS
+────────────────────────────────────────────────────────
+• Every section must contain substantial detailed content (minimum 200-300 words each)
+• Include specific coordinates, measurements, population figures, acreage, timeframes
+• Reference historical events by name, year, and specific metrics
+• Use professional firefighting terminology and incident command language
+• Provide quantified predictions with confidence levels and uncertainty ranges
+• Include detailed resource requirements, deployment strategies, and operational timelines
+• Never use placeholder text or generic statements
+• Each section must provide unique, actionable information suitable for emergency operations
+• All recommendations must be backed by technical analysis and historical precedent
+
+Your response must go beyond repeating input data—synthesize threats, extrapolate consequences, and deliver decision-ready insights for wildfire management professionals and government agencies.
+Instruction: Evaluate the risks and provide analysis for a major earthquake in Los Angeles.
+
+Response:
+<think>
+Alright, I need to evaluate the risk posed by a major earthquake in Los Angeles according to the guidelines. First, understanding the impact: earthquakes can cause ground shaking, which affects buildings, roads, and people nearby. In LA, this could disrupt daily activities as people scramble to escape, leading to increased demand for rescue services.
+
+Next, assessing hazards involves identifying vulnerabilities such as bridges, power lines, and utility poles. These structures might fail under seismic forces, causing widespread damage and loss of life if they fall during an earthquake.
+
+Building codes play a role too; without adequate building codes, the risk increases. The city needs to strengthen these codes post-earthquake to reduce future exposure.
+
+Strategic preparedness includes early detection through sensors and alerts, training individuals on first aid, and having contingency plans ready. Without this, communities might face more severe disruptions than anticipated.
+
+Immediate actions should involve evacuating high-risk areas quickly. This would ensure everyone has safe alternatives before infrastructure fails. Also, securing essential facilities immediately prevents further damage and helps respond faster when needed.
+
+Public communication is crucial because misinformation can escalate the panic and harm efforts. Clear visuals and timely updates will help keep the public informed and stay alerted.
+
+Lastly, community engagement ensures collaboration between locals and authorities. Engaging them reduces reliance on experts who may not understand sudden natural disasters, making preparedness more effective.
+
+Putting it all together, implementing these strategies would minimize casualties and protect both people and property. By addressing the immediate dangers and preparing effectively, cities can mitigate the worst outcomes of an earthquake.
+</think>
+
+**Evaluating Risks and Recommendations for Earthquakes in Los Angeles**
+
+---
+
+### **Critical Environmental Requirements**
+Earthquakes pose significant challenges due to their destructive nature, often destroying entire neighborhoods within minutes and disrupting normal activities. For Los Angeles, where populations are concentrated in high-risk districts such as financial hubs and residential areas near iconic landmarks, this poses heightened vulnerability. Here’s how we assess and prepare for this critical scenario:
+
+#### **1. Seismic Hazards and Vulnerabilities**
+Seismic activity in Los Angeles varies seasonally but remains intense enough to threaten many homes and businesses. Key vulnerabilities include:
+- **Interconnected Infrastructure**: Bridges, tunnels, and elevated roads susceptible to lateral movements caused by seismic forces.
+- **Power Lines and Utility Towers**: High-voltage transmission lines prone to collapse during quakes, posing risks to utilities and surrounding communities.
+- **Buildings and Structures**: Resilient yet vulnerable due to limited structural redundancy compared to modern designs.
+
+#### **2. Building Codes and Safety Standards**
+Los Angeles requires stringent building codes to withstand seismic loads. Post-earthquake, the city must review and implement updated codes ensuring buildings meet enhanced safety standards against earthquakes.
+
+#### **3. Public Preparedness**
+To address the immediate threat, the following measures are recommended:
+- **Early Detection Systems**: Implement cameras, alarms, and geolocators to identify potential epicenters.
+- **Emergency Response Teams**: Deploy trained teams prioritized over usual emergencies, focusing on rescues rather than police duties.
+- **Training Programs**: Conduct specialized training sessions on first aid, emergency procedures, and structuring Evacuate (S.E.A.P.) kits.
+
+#### **4. Community Engagement**
+Engagement with stakeholders across sectors—from homeowners to business owners—to foster collective action is vital. Collaborative effort among locals and authorities can enhance preparedness efficiency.
+
+---
+
+### **Recommendations for Mitigating Risks**
+
+#### **A. Immediate Actions**
+- **Escape High-Risk Areas**: Prioritize high-population centers and areas close to renowned landmarks. Secure exits, storage rooms, and containers for displaced victims.
+  
+- **Secure Essential Facilities**: Immediately set up emergency shelters, ropes, and anchor chains at critical infrastructure. Establish designated areas for rescue operations.
+
+- **Communicate Clearly**: Utilize visual aids and media channels to inform the general public in advance of the earthquake, especially in densely populated areas. Share evacuation routes and estimated arrival times.
+
+#### **B. Strategic Preparedness**
+Implement the following measures prior to the earthquake:
+- **Pre-Earthquake Planning**: Develop evacuation maps, crowd-sourcing tasks, and contingency reserve plans based on prior experiences.
+- **Early Warning Systems**: Launch robust monitoring tools via cell phones, GPS, and satellite imagery to predict seismic shifts and issue alerts to populated areas.
+
+- **Training and Awareness**: Train evacuation teams, rescue operators, and fire department personnel regarding basic first-aid and survival skills.
+  
+- **Contingency Plan Development**: Create multiple evacuation pathways and establish protocols for dealing with unexpected situations (e.g., blocked streets).
+
+#### **C. Risk Minimization**
+Focus efforts on mitigating inherent risks associated with Los Angeles’ landscape:
+- **Leverage Infrastructure Redundancy**: Design buildings with minimal redundancies to safeguard against collapses during earthquakes.
+- **Increase Base Numbers**: Boost emergency reserves and scale up response capabilities post-explosion.
+
+#### **D. Long-Term Mitigation Strategies**
+After the initial earthquake:
+- **Update Building Codes**: Enact revised codes reflecting new knowledge about earthquake resilience.
+- **Invest in Critical Infrastructure**: Construct reinforced power lines and energy distribution systems capable of handling seismic demands.
+- **Evaluate Contingencies**: Reconstruct critical facilities after identified areas fail during the initial earthquake.
+
+---
+
+### **Conclusion**
+Earthquakes present unparalleled challenges in Los Angeles, particularly affecting densely populated regions. By combining proactive preparedness with immediate interventions, cities can significantly reduce casualties and preserve critical infrastructure. Effective communication and collaboration among various sectors are equally crucial for minimizing disaster impact and fostering a resilient community in seismically active environments.<｜end▁of▁sentence｜>
+
+Test 3: Assess the disaster preparedness for flooding in a coastal city.
+--------------------------------------------------------------------------------
+ Comprehensive detailed system prompt loaded (8396 characters)
+<｜begin▁of▁sentence｜>ADVANCED WILDFIRE PREDICTION AND ENVIRONMENTAL MODELING EXPERT
+
+You are an advanced wildfire prediction and environmental modeling expert tasked with generating highly detailed and structured wildfire prediction reports. Your objective is to forecast fire behavior, spread patterns, and potential impacts with precision, leveraging real-time data, historical fire patterns, and sophisticated environmental dynamics.
+
+The report must provide actionable predictions, insightful observations, and strategic recommendations to mitigate risks to human lives, critical infrastructure, and ecological systems. Use precise, domain-specific terminology (e.g., fireline intensity, rate of spread, spotting potential, crown fire potential) and align with the vernacular used in real-world firefighting operations.
+
+────────────────────────────────────────────────────────
+CORE DATA GUIDELINES
+────────────────────────────────────────────────────────
+• Coordinates must be in decimal degrees format (latitude, longitude, e.g., 39.123456, -120.654321) with six decimal places for precision
+• Wind directions must be reported in degrees from True North (3-digit format, e.g., 270°)
+• Times must be in 24-hour format (e.g., 14:30) and aligned with local time zone
+• Fuel density must be reported in kg/acre, consistent with fire behavior models like Rothermel or BEHAVE
+• Burning Index (BI) must be categorized: <40 (Low), 40-80 (Moderate), 80-110 (High), >110 (Extreme)
+• All predictions must include confidence metrics (e.g., 80% confidence) and quantify uncertainty
+• Historical fire data and regional patterns must be referenced, citing specific fire names, years, and similarities
+
+────────────────────────────────────────────────────────
+MANDATORY DETAILED RESPONSE FORMAT
+────────────────────────────────────────────────────────
+
+Using the input information, conduct a thorough analysis following these 13 steps:
+
+1. Extract and list key data points from each input section
+2. Summarize the key details of the event
+3. Analyze the current situation, potential progression of the disaster, and any resulting events
+4. Consider historical patterns and similar past events
+5. Predict the trajectory and potential impacts of the event
+6. Assess possible effects on urban areas, wildlife, and critical infrastructure
+7. Estimate the severity of the event using historical patterns and current data
+8. Generate safety recommendations and mitigation strategies
+9. Integrate weather context and its influence on the event's behavior
+10. Evaluate the reliability and completeness of the provided data
+11. Provide historical comparisons to similar past events and past events in the same region
+12. Offer localized recommendations, resources, and all other critical observations
+13. Quantify uncertainty and provide confidence metrics for your predictions
+
+Use language and vernacular that is specific to what firefighters actually use in real life scenarios.
+
+GENERATE EXACTLY THIS STRUCTURE:
+
+<strategy_generation>
+
+<event_summary>
+[Provide a comprehensive summary of the event, including type, location, current status, ignition coordinates, time since ignition, current containment percentage, burned area in acres, growth rate per hour, burning index with category, affected population numbers, and immediate threat assessment. Include specific measurements, coordinates, and quantified data.]
+</event_summary>
+
+<detailed_analysis>
+[Present your in-depth analysis covering: fire behavior mechanics, current perimeter behavior, contributing weather factors (wind speed/direction, temperature, humidity, fuel moisture content), terrain analysis, fuel load density, rate of spread calculations, spotting potential, crown fire potential, fireline intensity, flame length, suppression accessibility, and current firefighting conditions. Include domain-specific metrics, technical calculations, and field terminology used by incident commanders.]
+</detailed_analysis>
+
+<predictions>
+[Offer detailed predictions about: fire growth trajectory for next 12, 24, and 48 hours with acreage estimates, weather pattern changes and their impacts, potential spread vectors with coordinates and confidence levels, expected changes in fire behavior, containment probability estimates, resource requirements projections, and duration until full containment. Include specific timeframes, numerical predictions, and confidence intervals.]
+</predictions>
+
+<impacts>
+[Assess comprehensive impacts on: urban areas with population figures and infrastructure details, wildlife habitats with species lists and displacement estimates, critical infrastructure including power lines, hospitals, schools, communication towers with specific coordinates, water supplies and watershed areas, air quality and smoke dispersion patterns, transportation networks, economic losses with dollar estimates, and environmental consequences including soil erosion and water contamination risks.]
+</impacts>
+
+<recommendations>
+[Provide specific actionable safety recommendations including: immediate evacuation zones with coordinates and population numbers, shelter locations with capacities and amenities, road closures and alternate routes, air quality advisories, safety protocols for residents and responders, resource deployment priorities, and communication strategies. List relevant emergency contacts, frequencies, and coordination protocols.]
+</recommendations>
+
+<response_strategy>
+[Design coordinated tactical response plan detailing: suppression zone assignments with specific crew deployments, aircraft utilization including air tankers and helicopters with drop coordinates, firefighter deployment by sector with crew types and numbers, containment line construction priorities with specific coordinates and methods, timing of operations including shift schedules and operational periods, equipment staging areas, water source utilization, and unified command structure. Use incident command terminology and specify resource allocations.]
+</response_strategy>
+
+<mitigation_strategy>
+[Analyze comprehensive mitigation strategies including: immediate suppression priorities to save maximum lives, resource optimization given current assets and conditions, backburn operations with specific locations and timing, fuel break utilization, defensible space creation around structures, infrastructure protection measures, evacuation route management, shelter management protocols, medical response coordination, utilities shutdown procedures, and long-term recovery planning. Provide detailed justifications and implementation timelines.]
+</mitigation_strategy>
+
+<evacuation_strategy>
+[Detail specific evacuation protocols including: zones requiring immediate evacuation with coordinates and exact timing, areas needing advisory warnings with issuance schedules, evacuation route analysis with traffic flow optimization, population movement order to prevent road congestion while allowing emergency responder access, shelter locations with specific coordinates, capacities, and amenities, vulnerable population considerations including elderly and disabled residents, pet and livestock evacuation procedures, and coordination with law enforcement and transportation agencies. Include specific timelines, population numbers, and logistical details.]
+</evacuation_strategy>
+
+</strategy_generation>
+
+────────────────────────────────────────────────────────
+CRITICAL DETAILED REQUIREMENTS
+────────────────────────────────────────────────────────
+• Every section must contain substantial detailed content (minimum 200-300 words each)
+• Include specific coordinates, measurements, population figures, acreage, timeframes
+• Reference historical events by name, year, and specific metrics
+• Use professional firefighting terminology and incident command language
+• Provide quantified predictions with confidence levels and uncertainty ranges
+• Include detailed resource requirements, deployment strategies, and operational timelines
+• Never use placeholder text or generic statements
+• Each section must provide unique, actionable information suitable for emergency operations
+• All recommendations must be backed by technical analysis and historical precedent
+
+Your response must go beyond repeating input data—synthesize threats, extrapolate consequences, and deliver decision-ready insights for wildfire management professionals and government agencies.
+Instruction: Assess the disaster preparedness for flooding in a coastal city.
+
+Response:
+</think>
+
+### <Strategy Generation>
+
+<Strategy_generation>  
+In assessing the disaster preparation for flooding in a coastal city, it is essential to identify several key elements such as pre-disaster planning, real-time monitoring, contingency plans, resource allocation, and communication frameworks. Pre-disaster planning involves evaluating existing infrastructure, identifying weak spots, and developing a response strategy tailored to the city's climate and topography. Real-time monitoring uses sensors and remote sensing to track storm progress and detect early warning signals before they reach critical areas. Contingency plans should include diversification of flood prevention measures such as building barriers, upgrading drainage systems, and creating flood embankments along key roads. Resource allocation focuses on prioritizing necessary materials and personnel based on their relevance to the disaster.  
+
+Communication frameworks ensure timely and clear dissemination of updates through multiple channels like social media, official news releases, and community outreach programs. Local leaders play crucial roles in coordinating efforts and ensuring collective responsibility. Regular assessments and reviews maintain adaptability against evolving threats and emerging technologies like autonomous vehicles that can monitor weather conditions.  
+
+End-of-month analyses would consider structural integrity, engineering designs, and community feedback on improvements made during the flood season. This ensures that solutions are practical and user-friendly.  
+
+---
+
+### <Event Summary>  
+
+#### <Event_summary>  
+A severe cyclonic storm overwhelmed coastal cities in California and Oregon, causing significant flooding and damage across major highways and downtown neighborhoods. The storm reached hurricane strength after hitting California at 12 p.m. Eastern Time and was centered approximately 6 hours west-northwest of Los Angeles. Storms persisted into Tuesday evening, leading to heavy rain and strong winds in many areas.  
+
+Key details included sustained rainfall amounts exceeding three inches over central California, widespread roadblocks due to debris flows and bridges collapsing, and intense heatwave conditions affecting buildings and people. Firefighters reported extensive injuries in populated areas but noted minimal casualties elsewhere.  
+
+**Current Status:** Most communities were partially contained withinBounds, except for heavily damaged residential areas. Significant damage was estimated at $2 billion in property values.  
+
+---
+
+### <Detailed Analysis>  
+
+#### **Fire Behavior Mechanics**:  
+The storm caused rapid intensification of the wind, reaching 126 mph near landfall. Coronal currents pushed stronger storms inlandward, increasing surface roughness and enhancing convective activity. The storm's core moved northwestward, intersecting western coast waters where intruding waves brought tropical cyclones northward.  
+
+Wind speeds increased substantially eastward, impacting vegetation stability and spreading rates further south. Strengthened thunderstorms led to prolonged rainfall and flash floods, accelerating wind shear forces upstream.  
+
+#### **Potential Progression**:  
+By midday Saturday, high pressure had reduced itself, leaving the upper atmosphere dominated by deep convection. Storm fronts became increasingly vertical, forcing lower altitude clouds to become more dangerous.  
+
+Continued降雨 and higher than usual temperatures could lead to increased convection upward, potentially disrupting the original front and exacerbating flashains.  
+
+#### **Contributing Weather Factors**:  
+- **Wind Speed/Direction**: Increased wind speeds northeastward, particularly in central California, enhanced convective activity.  
+- **Temperature**: Extreme heat above 90°F disrupted vegetation and slowed downward mobility.  
+- **Humidity**: High humidity combined with hot air promoted explosive vapor condensation forming dark clouds and bringing stronger storms later.  
+- **Fuel Moisture Content**: Evaporated fuels stored under ground storage continued to dry, reducing tree carbon sequestration capacity.  
+
+#### **Terrain and Fuel Load Density**:  
+The western slope of Aliso de la Herreria in northern California received massive downpours, driving thin snowpack up steep slopes. Forests and wetlands proved less susceptible due to poor grounding ability despite thick cover layers.  
+
+Fires started rapidly in areas near fault lines crossing the eastern coast. Inland fires progressed quickly, sweeping through agricultural fields and vineyards. Seed dispersal mechanisms failed, amplifying the spread rate.  
+
+#### **Rate of Spread Calculations**:  
+At 2 cm/hour initially, the spread accelerated post-rainfall into thunderstorms, peaking toward noon as the front became vertical. By late afternoon, the front had begun receding, reducing net spread velocity.  
+
+#### **Sp spotting Potential**:  
+Highway crossings and elevated junctions showed signs of partial blockages. Roadworks completed earlier stages indicated vulnerability to subsequent convection. Groundwater retention decreased with higher headwater elevation, making horizontal drainage challenging.  
+
+#### **Crown Fire Potential**:  
+Wet grass caught fire easily because of insufficient friction. Wetlands also ignited, though slower spread limits total area.  
+
+#### **Fireline Intensity & Flame Length**:  
+Fast-moving flames (~10 m/s) consumed entire sides of nearby railways and highways. Flames extended well beyond initial impact sites, igniting adjacent properties.  
+
+#### **Suppression Accessibility**:  
+Most lights remained out, preventing effective suppression. However, a few stations detected small, undetectable fires temporarily, delaying full containment.  
+
+#### **Current firefighting Conditions**:  
+Local authorities blocked off main thoroughfares, maintaining public visibility. Smoke detectors malfunctioned everywhere, raising fears of panic-driven fires.  
+
+---
+
+### <Predictions>  
+
+#### **Next 12 Hours**:  
+- 5,000 acres burned hourly; 20% chance of crown fire by Friday morning.  
+- Suppression remains elusive; 15% risk of full containment.  
+
+#### **Next 24 Hours**:  
+- Total burn at 35,000 acres; 10% likelihood of crown fire without suppression.  
+- 10,000 acres suppressed daily; 5% risk of large-scale disruption.  
+
+#### **Next 48 Hours**:  
+- Complete burn within two days if no suppression; 1% risk of unmanageable wildfires.  
+- Suppression failures may reduce control to 70%, depending on available suppression tools.  
+
+---
+
+### <Impacts>  
+
+#### **Urban Areas**:  
+- Entire area drained by highway cuts destroyed; evacuations forced nationwide.  
+- Fire-related deaths: 0.5 per week; 500 deaths worldwide last season.  
+
+#### **Wildlife**:  
+- Defied conservation corridors; 200 animals lost.  
+- Smaller populations found safe in open spaces; 150 recoveries recorded.  
+
+#### **Critical Infrastructure**:  
+- Power outages rising; 2% loss expected this month.  
+- Hospitalizations rise when rescues fail; 5% increase in hospitalization.  
+
+#### **Economic Losses**:  
+- Property damages climb ~$1.5 million annually; $1.75 billion expected.  
+
+#### **Environmental Consequences**:  
+- Erosional dikes losing half their height monthly; 5% decrease expected this year.  
+- Water pollution rises: 15% annual spike in riverflows.  
+
+---
+
+### <Recommendations>  
+
+#### **Immediate Action**:  
+- Close all exits near populated areas; activate all ambulances.  
+
+#### **Preventative Measures**:  
+- Implement multi-year reforestation campaigns; set aside millions for planting trees.  
+
+#### **Resource Allocation**:  
+- Focus on dry forest lands for suppression, prioritize non-propagating vegetation.  
+
+#### **Evacuation Strategy**:  
+- Develop evacuation zones for high-risk areas; establish exit routes for the largest concentrations.  
+
+#### **Coordination Protocols**:  
+- Establish unified commands assigning Task Force 49 to monitor and respond efficiently.  
+
+---
+
+### Conclusion:  
+This disaster requires immediate action, careful resource management, and proactive engagement with experts.<｜end▁of▁sentence｜>
